@@ -14,7 +14,7 @@
     }
   },
   "lint-staged": {
-    "../**/*.js": [
+    "./**/*.js": [
       "npm run lint",
       "npm run test",
       "git add"
@@ -22,6 +22,9 @@
   },
   "bin": {
     "jstest": "./bin/jstest.js"
+  },
+  "jstestConfig": {
+    "testDir": "../../../**/"
   },
   "devDependencies": {
     "concat-stream": "^1.6.2",
